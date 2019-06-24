@@ -1,0 +1,23 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.15.4",
+    "mssql": "^4.2.3",
+    "mysql": "^2.16.0",
+    "path": "^0.12.7",
+    "randomstring": "^1.1.5",
+    "request": "^2.88.0",
+    "morgan": "^1.8.2",
+    "method-override": "~2.3.7"
+  }
+}

@@ -1,0 +1,63 @@
+<div class="main-panel" >
+    <h2 style="text-align: center;">Agregar usuario Examen Servicios REST POST</h2>
+    <div class="content" >
+        <div class="btn btn-danger" ng-show="error">Erro al Guardar el registro</div>
+        <div class="container-fluid">
+        
+        <!-- Agregar & Editar Usuario  -->
+            <div class="row" id="Edit_AddUser" >
+                
+                <form>
+                <div class="col-md-4">
+                <div class="form-group bmd-form-group">
+                  <label class="bmd-label-floating">Nombre</label>
+                  <input type="text" class="form-control" ng-model="usuario.Nombre">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group bmd-form-group">
+                  <label class="bmd-label-floating">Apellidos</label>
+                  <input type="text" class="form-control" ng-model="usuario.Apellidos">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group bmd-form-group">
+                  <label class="bmd-label-floating">Nombre de usuario</label>
+                  <input type="text" class="form-control" ng-model="usuario.Nombre_Usuario">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group bmd-form-group">
+                  <label class="bmd-label-floating">Correo</label>
+                  <input type="email" class="form-control" ng-model="usuario.Correo_Electronico">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group bmd-form-group">
+                  <label class="bmd-label-floating">Contraseña</label>
+                  <input type="password" class="form-control" ng-model="usuario.Contraseña">
+                </div>
+              </div>
+             
+                            
+                             
+                       
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 float-right mt-4">
+                <button type="submit" class="btn btn-primary"  ng-click="guardar()">Guardar</button>
+                    <div class="clearfix"></div>
+                </div>
+                
+            </form>
+                
+            </div>
+    
+        
+        
+        
+        
+        </div>
+        
+        </div>
+        
+        </div>
+        

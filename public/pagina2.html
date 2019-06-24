@@ -1,0 +1,30 @@
+<table class="table display nowrap table-bordered text-center compact" style="width: 100%">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nombre</th>
+            <th>edad</th>
+            <th>NSS</th>
+            <th>sexo</th>
+            <th>peso</th>
+            <th>altura</th>
+            <th>resultado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="usuario in listUsuarios.data">
+            <td>{{usuario.id_persona}}</td>
+            <td>{{usuario.nombre}}</td>
+            <td>{{usuario.edad}}</td>
+            <td>{{usuario.nss}}</td>
+            <td ng-show="{{usuario.sexo==='H'}}">Hombre</td>
+            <td ng-show="{{usuario.sexo==='M'}}">Mujer</td>
+            <td>{{usuario.peso}}</td>
+            <td>{{usuario.altura}} cm</td>
+            <td ng-show="{{usuario.resultado===-1}}">Falta de peso</td>
+            <td ng-show="{{usuario.resultado===0}}">Peso normal</td>
+            <td ng-show="{{usuario.resultado===1}}">Sobre peso</td>
+        </tr>
+    </tbody>
+   
+</table>
